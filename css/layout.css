@@ -1,18 +1,19 @@
 .left {
     float: left;
-    width: 150px;
+    width: 200px;
     height: auto;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: 0.3em;
     margin-bottom: 20px;
-    background-color: #72bcd4;
+    margin-left: 0px;
+    <!-- background-color: #72bcd4; -->
 }
 
 .main {
     float: right;
-    width: 770px;
+    width: 720px;
     padding: 20px;
     margin-bottom: 20px;
     margin-left: 20px;

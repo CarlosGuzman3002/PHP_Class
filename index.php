@@ -17,7 +17,7 @@
     <!-- Navigation menu to all course assignments -->
     <nav class="left">
         <ul>
-            <h4>Lesson 1</h4>  <!-- Check (work on progress) to be sure if my code is ready to be graded-->
+            <!-- Check (work on progress) to be sure if my code is ready to be graded-->
             <li><a href="/">Homepage</a></li>
             <li><a href="#">Loops Demo</a></li>
             <li><a href="#">Countdown Item 1-4</a></li>
