@@ -80,3 +80,16 @@ img {
     border:3px;
     border-radius: 1em;
 }
+
+
+<!-- Added later for php -->
+
+.success {
+    font-weight: bold ;
+    color: green;
+}
+
+.error {
+    font-weight: bold ;
+    color: red;
+}

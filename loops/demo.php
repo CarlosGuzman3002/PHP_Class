@@ -22,24 +22,42 @@
         <h3>Loops Demo</h3>
 
     <?php
-
         $number = 100;
         print $number;
-        echo  "<br/><strong>" .$number. "</strong>";
-
+        echo  "<br/><strong>" . $number . "</strong>";
         echo "<br/><strong>$number</strong>";
+        echo  '<br/><strong>' . $number . '</strong>';
+        echo  "<br/><strong>$number</strong>";
+        echo  "<br/><strong>$number</strong>";
+        $result = "<br/><strong>";
+        $result .= $number;
+        $result .= "<strong>";
 
         $number1 = 100;
         $number2 = 50;
         $result1 = $number1+$number2;
-        echo  "<br/><strong>$number1 + $number2 = $result1</strong> ";
+        $result2 = $number1-$number2;
+        $result3 = $number1*$number2;
+        $result4 = $number1/$number2;
 
+        echo  "<br/><strong>$number1 + $number2 = $result1</strong> ";
+        echo  "<br/><strong>$number1 - $number2 = $result2</strong> ";
+        echo  "<br/><strong>$number1 * $number2 = $result3</strong> ";
+        echo  "<br/><strong>$number1 / $number2 = $result4</strong> ";
+
+        // --- Loops ---
         // while
-//        $i = 1;
-//        while (i<7){
-//            echo "<h$i>Hello World</h$i>";
-//            $i++;
-//        }
+        $i = 1;
+        while ($i<7){
+            echo "<h$i>Hello World</h$i>";
+            $i++;
+        }
+
+        $i=6;
+        while ($i > 0) {
+            echo "<h$i>Hello World</h$i>";
+            $i--;
+        }
 
         // do while
         $i = 6;
@@ -48,10 +66,23 @@
             $i--;
         } while ($i > 0);
 
+        // for
+        for ($i = 1; $i <= 6; $i++)
+            echo "<h$i>Hello World</h$i>";
+
+        // String functions
+        echo "<br><br><br>";
         $full_name = "Bob Smith";
         $position = strpos($full_name, ' ');
-
         echo "<br>The White space is in the $position position";
+
+        echo "<br>".strtoupper($full_name);
+        echo "<br>".strtolower($full_name);
+
+        $name_parts=explode(' ', $full_name);
+        echo "<br>First Name: " . $name_parts[0];
+
+
     ?>
 
     </section>
